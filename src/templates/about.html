@@ -1,0 +1,408 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+    <!-- PRELOADER START -->
+    <div id="loader-wrapper">
+        <div class="loader">
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+        </div>
+    </div>
+    <!-- PRELOADER END -->
+
+    <header>
+
+        <!-- NAV START -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container p-0">
+
+                <a href="{%url 'home' %}" class="navbar-brand"><img src="{% static 'img/master/LogoFoto.png' %}" alt=""></a>
+
+                <div id="ytWidget"></div><script src="{% static 'js/widget5d1f.js' %}?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=dark&amp;autoMode=true" type="text/javascript"></script>
+
+                <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+                    <span class="menu-icon-bar"></span>
+                    <span class="menu-icon-bar"></span>
+                    <span class="menu-icon-bar"></span>
+                </button>
+
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="{%url 'home' %}" class="nav-item nav-link">HOME</a></li>
+                        <li><a href="about.html" class="nav-item nav-link">ABOUT US</a></li>
+                        <li><a href="{%url 'contact' %}" class="nav-item nav-link">CONTACT US</a></li>
+                        <li><a href="{%url 'track_shipment' %}" class="nav-item nav-link">TRACK SHIPMENT</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- NAV END -->
+
+        <!--SLIDER START-->
+
+
+        <!-- FRONT BOXES START -->
+
+
+<div class="pages-hero">
+    <div class="container">
+        <div class="pages-title">
+            <h1>About Us</h1>
+            <div class="page-nav">
+                <p><a href="#">Home</a> &nbsp; | &nbsp; <a href="#">About Us</a></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- CONTENT START -->
+<section>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="content-about">
+                    <h5>About Us</h5>
+                    <h2>Fueling Your Logistics Chain</h2>
+                    <p>Ocean transport, Air transport, Land transport, or any combination of these are familiar to the experts. We’ve been doing this since 1984 when the first company was established but our actual experience.</p>
+                    <p><strong>Hapag-Lloyd</strong> is one of the largest air freight transportation providers in the world, offering a full and comprehensive package of premium, value-added services and specialist products.</p>
+                    <figure class="signature"><img src="{% static 'img/images/signature.png' %}" alt=""></figure>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-view">
+                <figure class="about-pic"><img src="{% static 'img/images/delivery.jpg' %}" alt=""></figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="media custom-media">
+                  <img src="{% static 'img/master/plane-icon.svg' %}" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0">Air Freight</h5>
+                    <p>There are many variations Air Freight at your disposal.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mc-view">
+                <div class="media custom-media">
+                  <img src="{% static 'img/master/ship-2.svg' %}" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0">Ocean Freight</h5>
+                    <p>There are many variations of passages of Ocean freigth at your disposal.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="media custom-media">
+                  <img src="{% static 'img/master/truck.svg' %}" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0">Ground Freight</h5>
+                    <p>There are many variations of Ground freight at you disposal.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WIDE SECTION START -->
+    <div class="ws-services-alt mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-5 ws-left-layer">
+
+            </div>
+            <div class="col-lg-7 ws-right-layer-alt">
+                <div class="inner-ws-right">
+                    <div class="side-title">
+                        <h6>WorldWide Shipping</h6>
+                        <h2>Borderless Logistics</h2>
+                    </div>
+                    <p class="strong">World’s leading non-asset- based supply chain management companies, we design and implement industry-leading.</p>
+                    <br>
+                    <div class="layer-highlighted-alt mt-3">
+                        <div class="media">
+                          <img src="{% static 'img/master/shipping-and-delivery.svg' %}" class="mr-3" alt="...">
+                          <div class="media-body">
+                            <h4 class="mt-0">Package Protection</h4>
+                            <p>Dedicated implementation teams will ensure a smooth and quick introduction to our systems.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="layer-highlighted-alt mt-3">
+                        <div class="media">
+                          <img src="{% static 'img/master/support.svg' %}" class="mr-3" alt="...">
+                          <div class="media-body">
+                            <h4 class="mt-0">24/7 Support</h4>
+                            <p>Call or email us today to request a call from one of our sales colleagues to create new opportunities.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- WIDE SECTION END -->
+<div class="container mt-5 mb-5">
+    <div class="row custom-row">
+       <div class="col-lg-6">
+           <div class="title-layer-left">
+               <h5>GO FAR TOGETHER</h5>
+                <h2>The Strength <br><strong>Comes with the Team</strong></h2>
+           </div>
+       </div>
+       <div class="col-lg-6">
+           <div class="title-layer-right">
+                <p>Don't know what means of transportation would be right for you, or you need someone for full supply chain management? Please contact us. Our team of professionals will be happy to help.</p>
+           </div>
+       </div>
+    </div>
+    <div class="team-carousel slider">
+      <div class="slide">
+        <div class="team-member">
+            <div class="team-img">
+                <img src="{% static 'img/images/rolf.jpg' %}" alt="" class="img-responsive">
+                <div class="team-intro light-txt">
+                    <h4>Rolf Habben Jansen</h4>
+                    <span>founder &amp; ceo</span>
+                </div>
+            </div>
+            <div class="team-hover">
+                <div class="desk">
+                    <h4>Hi There !</h4>
+                    <p>I love to introduce myself as the Founder.</p>
+                </div>
+                <div class="s-link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="team-member">
+            <div class="team-img">
+                <img src="{% static 'img/images/mark.jpg' %}" alt="" class="img-responsive">
+                <div class="team-intro light-txt">
+                    <h4>Mark Frese</h4>
+                    <span>CFO</span>
+                </div>
+            </div>
+            <div class="team-hover">
+                <div class="desk">
+                    <h5>Hello World</h5>
+                    <p>I love to introduce myself as the Chief Finicial Officer.</p>
+                </div>
+                <div class="s-link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="team-member">
+            <div class="team-img">
+                <img src="{% static 'img/images/anna.jpg' %}" alt=""  class="img-responsive">
+                <div class="team-intro light-txt">
+                    <h4>Annabell Kroger</h4>
+                    <span>Commercial Clerk</span>
+                </div>
+            </div>
+            <div class="team-hover">
+                <div class="desk">
+                    <h5>Hi There !</h5>
+                    <p>I love to introduce myself as Commercial Clerk</p>
+                </div>
+                <div class="s-link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="team-member">
+            <div class="team-img">
+                <img src="{% static 'img/images/nic.jpg' %}" alt="" class="img-responsive">
+                <div class="team-intro light-txt">
+                    <h4>Nicola Gehrt</h4>
+                    <span>Director</span>
+                </div>
+            </div>
+            <div class="team-hover">
+                <div class="desk">
+                    <h5>Hello World</h5>
+                    <p>I love to introduce myself as the Director.</p>
+                </div>
+                <div class="s-link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="team-member">
+            <div class="team-img">
+                <img src="{% static 'img/images/gov.jpg' %}" alt="" class="img-responsive">
+                <div class="team-intro light-txt">
+                    <h4>Turiq Alnowaiser</h4>
+                    <span>Deputy Governor</span>
+                </div>
+            </div>
+            <div class="team-hover">
+                <div class="desk">
+                    <h5>Hi There!</h5>
+                    <p>I love to introduce myself as the Deputy Governor.</p>
+                </div>
+                <div class="s-link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- OUR TEAM END -->
+
+    <!-- CALL TO ACTION ACOUNTER START -->
+    <div class="cta-counter mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="cta-content">
+                        <h3>Moving Every <br> Customer With Care</h3>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="cta-btn">
+                        <button class="cargoy-btn-white">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="counter-wrapper-alt">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <div class="media counter-col-alt  counter-border-right-alt">
+                  <img src="{% static 'img/master/delivery-man.svg' %}" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <div class="mt-0"><div class="counter" data-count="93">0</div></div>
+                    <p>Qualified Staff</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="media counter-col-alt counter-border-right-alt">
+                  <img src="{% static 'img/master/crane.svg' %}" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <div class="mt-0"><div class="counter" data-count="1233">0</div></div>
+                    <p>Total weight</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="media counter-col-alt counter-border-right-alt">
+                  <img src="{% static 'img/master/cargo-ship-2.svg' %}" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <div class="mt-0"><div class="counter" data-count="1200">0</div></div>
+                    <p>Maritime Shipping</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="media counter-col-alt">
+                  <img src="{% static 'img/master/medal.svg' %}" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <div class="mt-0"><div class="counter" data-count="356">0</div></div>
+                    <p>Company Awards</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- CALL TO ACTION ACOUNTER END -->
+
+    <!-- LATEST NEWS START -->
+    <div class="container mt-5 mb-5">
+        <div class="section-title">
+            <h2>Latest News</h2>
+            <p>We specialise in intelligent & effective search and believes in <br/> the power of partnerships to grow business.</p>
+        </div>
+        <div class="blog-carousel slider">
+          <div class="slide">
+            <figure class="blog-preview-thumb"><img src="{% static 'img/images/logistic0.jpg' %}" alt=""/>
+              <div class="date"><span class="day">28</span><span class="month">Apr</span></div>
+              <div class="postcaption">
+                <h3>Ship Orders Crash as Takes a Toll on Trade</h3>
+                <p>Which is worse, that everyone has his price, or that the price is always so low application in life.</p>
+            </div>
+              <div class="hover"><i class="fas fa-external-link-alt"></i></div>
+              <a href="#"></a>
+            </figure>
+          </div>
+          <div class="slide">
+            <figure class="blog-preview-thumb"><img src="{% static 'img/images/logistic2.jpg' %}" alt=""/>
+              <div class="date"><span class="day">17</span><span class="month">May</span></div>
+              <div class="postcaption">
+                <h3>Oil Traders Are Scrambling to Tankers</h3>
+                <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+            </div>
+              <div class="hover"><i class="fas fa-external-link-alt"></i></div>
+              <a href="#"></a>
+            </figure>
+          </div>
+          <div class="slide">
+            <figure class="blog-preview-thumb"><img src="{% static 'img/images/logistic4.jpg' %}" alt=""/>
+              <div class="date"><span class="day">08</span><span class="month">June</span></div>
+              <div class="postcaption">
+                <h3>Weighs on Trade on the Largest Container Ship</h3>
+                <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+            </div>
+              <div class="hover"><i class="fas fa-external-link-alt"></i></div>
+              <a href="#"></a>
+            </figure>
+          </div>
+          <div class="slide">
+            <figure class="blog-preview-thumb"><img src="{% static 'img/images/logistic1.jpg' %}" alt=""/>
+              <div class="date"><span class="day">08</span><span class="month">June</span></div>
+              <div class="postcaption">
+                <h3>The World Ended Yesterday</h3>
+                <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+              </div>
+              <div class="hover"><i class="fas fa-external-link-alt"></i></div>
+              <a href="#"></a>
+            </figure>
+          </div>
+        </div>
+    </div>
+    <!-- LATEST NEWS END -->
+
+</section>
+<!-- CONTENT END -->
+
+{% endblock content %}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>hapag-lloyd Shipping Company</title>
+    <link rel="icon" href="cargos/images/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="{% static 'cargos/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'cargos/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'cargos/css/font-awesome.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'cargos/css/et-line-fonts.css' %}" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic,900italic,900,300,300italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href="{% static 'cargos/css/flaticon.css' %}" rel="stylesheet">
+    <link rel="stylesheet" id="color" href="{% static 'cargos/css/colors/defualt.css' %}">
+    <link href="{% static 'cargos/css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'cargos/css/bootstrap-dropdownhover.min.css' %}" rel="stylesheet">
+
+    <script>
+    window.addEventListener("hashchange", function(e) {
+       alert('are you sure')
+      })
+    </script>
+
+</head>
+
+<body>
+    <!-- =-=-=-=-=-=-= PRELOADER =-=-=-=-=-=-= -->
+
+    <div id="ytWidget"></div><script src="{% static 'js/widget5d1f.js' %}?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=dark&amp;autoMode=true" type="text/javascript"></script>
+
+    <!-- =-=-=-=-=-=-= HEADER =-=-=-=-=-=-= -->
+    <section class="top-bar color-scheme">
+        <div class="container">
+            <div class="left-text nav-left pull-left">
+                <p><span>Opening Hours :</span> Monday to Saturday - 8am to 5pm</p>
+            </div>
+            <!-- /.left-text -->
+           <!-- <ul class="nav-right pull-right list-unstyled">
+                <li> <a href="login"><i class="fa fa-lock"></i> Login </a></li>
+                <li> <a href="sign-up.html"><i class="fa fa-user"></i> Sign Up </a></li>
+                <li class="dropdown nav-profile">
+                    <a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" data-animations="fadeInUp">
+                    <img class="img-circle resize" alt="" src="images/avatar.jpg">
+                    <span class="hidden-xs small-padding"> <span>Umair</span> <i class="fa fa-caret-down"></i></span>
+                    </a>
+                    <ul class="dropdown-menu with-arrow pull-right">
+                    <li> <a href="profile.html"> <i class="fa fa-user"></i> <span>My Profile</span> </a> </li>
+                    <li> <a href="history.html"> <i class="fa fa-check"></i> <span>Tracking History</span> </a> </li>
+                    <li> <a href="javascript:void(0)"> <i class="fa fa-lock"></i> <span>Payment Setting</span> </a> </li>
+                    <li> <a href="javascript:void(0)"> <i class="fa fa-sign-out"></i> <span>Log Out</span> </a> </li>
+                    </ul>
+                </li>
+             </ul> -->
+        </div>
+    </section>
+    <header class="header-area">
+        <div class="navigation">
+            <!-- navigation-start -->
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button aria-expanded="false" data-target="#main-navigation" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                         <span class="sr-only">Toggle navigation</span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+       					</button>
+
+                        <a class="navbar-brand" href="{%url 'home' %}">
+                        <img alt="" src="{% static 'img/master/LogoFoto.png' %}" class="img-responsive" width="200px" height="60px"> </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div id="main-navigation" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right custom-nav">
+                            <li class="dropdown"> <a href="{%url 'home' %}">Home</a>
+                            </li>
+                                                                                    <li class="dropdown"><a href="{%url 'track_shipment' %}">Track Shipment</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-end -->
+            </nav>
+        </div>
+    </header>
+    <!-- =-=-=-=-=-=-= HEADER END =-=-=-=-=-=-= -->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                            </div>
+        </div>
+    </div>
+
+
+    <!-- =-=-=-=-=-=-= HOME Banner =-=-=-=-=-=-= -->
+    <div class="hero-3 full-section " id="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h2>Track Your Shipment</h2>
+          <div class="form">
+            <form method="post" action="{%url 'search' %}">
+            {%csrf_token%}
+              <input type="text" name="refNo" class="form-control"  placeholder="Your Tracking ID">
+              <button type="submit">Track</button>
+            </form>
+
+             <br><br>
+<table class="table table-hover" border="1" style="width:100%;margin:0px auto;">
+    <tr>
+        <th>Source:</th>
+        <th>Current location:</th>
+        <th>Destination</th>
+        <th>Status</th>
+    </tr>
+    {%if con%}
+    <tr>
+        <td>{{con.source}}</td>
+        <td>{{con.currentcity}}</td>
+        <td>{{con.destination}}</td>
+        <td>{{con.status}}</td>
+    </tr>
+    {%else %}
+    <h1> There is no courier with that tracking ID </h1>
+    {%endif%}
+
+</table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--======= HOME Banner END =========-->
+
+
+    <!-- =-=-=-=-=-=-= SEPARATOR Fun Facts =-=-=-=-=-=-= -->
+
+    <!-- =-=-=-=-=-=-= SEPARATOR END =-=-=-=-=-=-= -->
+
+         <!-- =-=-=-=-=-=-= FOOTER =-=-=-=-=-=-= -->
+         <footer class="footer-area">
+
+        <!--Footer Upper-->
+        <div class="footer-content">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4 my-3" style="margin-bottom:10px">
+                        <div class="footer-widget about-widget">
+
+
+                            <div class="logo">
+                                <a href="{%url 'home' %}"><img src="{% static 'img/master/LogoFoto.png' %}" class="img-responsive" alt="" width="200px" height="80px"></a>
+                            </div>
+
+                            <ul class="contact-info">
+                               <li><span class="icon fa fa-envelope-o"></span> info@httphapag-lloydcompany.com</li>
+                                <!--<li><span class="icon fa fa-map-marker"></span> 60 Link Road Lhr. Pakistan 54770</li>
+                                <li><span class="icon fa fa-phone"></span> (042) 1234567890</li>
+                                <li><span class="icon fa fa-envelope-o"></span> contant@scriptsbundle.com</li>
+                                <li><span class="icon fa fa-fax"></span>  (042) 1234 7777</li> -->
+                            </ul>
+                            <div class="social-links-two clearfix mb-3"> <a href="#" class="facebook img-circle"><span class="fa fa-facebook-f"></span></a> <a href="#" class="twitter img-circle"><span class="fa fa-twitter"></span></a> <a href="#" class="google-plus img-circle"><span class="fa fa-google-plus"></span></a> <a href="#" class="linkedin img-circle"><span class="fa fa-pinterest-p"></span></a> <a href="#" class="linkedin img-circle"><span class="fa fa-linkedin"></span></a> </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 my-3">
+                        <h2>Our Service</h2>
+                        <div class="footer-widget links-widget">
+                            <ul>
+                                <li>Packaging And Storage</a></li>
+                                <li>Cargo</a></li>
+                                <li>Air Freight</li>
+                                <li>Sea Freight</li>
+                                <li>Courier</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-3">
+                        <div class="footer-widget links-widget">
+                            <h2>Site Links</h2>
+                            <ul>
+                                <li><a href="{%url 'home' %}">Home</a></li>
+                                <!--<li><a href="{%url 'about' %}">About Us</a></li>
+                                <li><a href="services.html">Our Services</a></li>-->
+                                <li><a href="{%url 'track_shipment' %}">Track Shipment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Footer Bottom-->
+        <div class="footer-copyright">
+            <div class="auto-container clearfix">
+                <!--Copyright-->
+                <div class="copyright text-center">Copyright 2021 &copy; <a target="_blank" href="https://worldwildcargos.com/">Hapag-Lloyd.com</a> All Rights Reserved</div>
+            </div>
+        </div>
+        </footer>
+
+
+        <!-- =-=-=-=-=-=-= JQUERY =-=-=-=-=-=-= -->
+        <script src="{% static 'cargos/js/jquery.min.js' %}"></script>
+
+        <!-- Bootstrap Core Css  -->
+        <script src="{% static 'cargos/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'cargos/js/goback.js' %}"></script>
+        <script src="{% static 'cargos/js/custom.js' %}"></script>
+
+            <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/60897d9c62662a09efc30044/1f4ch5b08';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+        </script>
+            <!--End of Tawk.to Script-->
+
+        </body>
+
+
+<!-- Mirrored from hugologiscargo.com/track_shipment by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Aug 2021 18:52:45 GMT -->
+</html>

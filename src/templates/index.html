@@ -1,0 +1,529 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <!-- PRELOADER START -->
+    <div id="loader-wrapper">
+        <div class="loader">
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+           <div class="ball"></div>
+        </div>
+    </div>
+    <!-- PRELOADER END -->
+
+    <header>
+
+        <!-- NAV START -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container p-0">
+
+                <a href="{%url 'home' %}" class="navbar-brand"><img src="{% static 'img/master/LogoFoto.png' %}" alt=""></a>
+
+                 <div id="ytWidget"></div><script src="{% static 'js/widget5d1f.js' %}?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=dark&amp;autoMode=true" type="text/javascript"></script>
+
+                <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+                    <span class="menu-icon-bar"></span>
+                    <span class="menu-icon-bar"></span>
+                    <span class="menu-icon-bar"></span>
+                </button>
+
+                <div id="main-nav" class="navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="{%url 'home' %}" class="nav-item nav-link">HOME</a></li>
+                        <li><a href="{%url 'about' %}" class="nav-item nav-link">ABOUT US</a></li>
+                        <li><a href="{%url 'contact' %}" class="nav-item nav-link">CONTACT US</a></li>
+                        <li><a href="{%url 'track_shipment' %}" class="nav-item nav-link">TRACK SHIPMENT</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- NAV END -->
+
+        <!--SLIDER START-->
+
+
+        <!-- FRONT BOXES START -->
+
+    <!--SLIDER START-->
+    <div class="home-slider dot-hide">
+        <!-- partial:index.partial.html -->
+        <div class="hero-slider" data-carousel>
+        <div class="carousel-cell" style="background-image:url({% static 'img/images/longcont.jpg' %});">
+            <div class="overlay"></div>
+            <div class="container slider-caption">
+            <h5 class="subtitle">Delivered on Time</h5>
+            <h2 class="title">Shipments delivered <br>on time with no hassle</h2>
+            <button class="cargoy-btn-white">Learn more</button>
+            </div>
+        </div>
+        <div class="carousel-cell" style="background-image:url({% static 'img/images/slider3.jpg' %});">
+            <div class="overlay"></div>
+            <div class="container slider-caption">
+            <h5 class="subtitle">Go Beyond</h5>
+            <h2 class="title">Logistics innovation <br> and technology</h2>
+            <button class="cargoy-btn-white">Learn more</button>
+            </div>
+        </div>
+        <div class="carousel-cell" style="background-image:url({% static 'img/images/slider4.jpg' %});">
+            <div class="overlay"></div>
+            <div class="container slider-caption">
+            <h5 class="subtitle">Delivery Unlimited</h5>
+            <h2 class="title">The new logistic <br>revolutions</h2>
+            <button class="cargoy-btn-white">Learn more</button>
+            </div>
+        </div>
+        </div>
+        <!-- partial -->
+    </div>
+<!--SLIDER END-->
+</header><!--SLIDER END-->
+
+
+<div class="container services-carousel slider">
+    <div class="slide">
+        <div class="Hugologiscargo-sb">
+            <figure class="sb-thumb green"><a href="maritime-transport.html"><img src="{% static 'img/images/cargo-3.jpg' %}" alt=""></a></figure>
+            <div class="sb-caption">
+                <figure class="icon-caption"><img src="{% static 'img/master/longcont.jpg' %}" alt=""></figure>
+                <h4>Ground Freight</h4>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+       <div class="Hugologiscargo-sb">
+            <figure class="sb-thumb green"><a href="air-transport.html"><img src="{% static 'img/images/airplane.jpg' %}" alt=""></a></figure>
+            <div class="sb-caption">
+                <figure class="icon-caption"><img src="{% static 'img/master/plane.svg' %}" alt=""></figure>
+                <h4>Air Freight</h4>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+       <div class="Hugologiscargo-sb">
+            <figure class="sb-thumb green"><a href="ground-transport.html"><img src="{% static 'img/images/ship.jpg' %}" alt=""></a></figure>
+            <div class="sb-caption">
+                <figure class="icon-caption"><img src="{% static 'img/master/cargo-ship.svg' %}" alt=""></figure>
+                <h4>Ocean Freight</h4>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+       <div class="Hugologiscargo-sb">
+            <figure class="sb-thumb green"><a href="air-transport.html"><img src="{% static 'img/images/Package.jpg' %}" alt=""></a></figure>
+            <div class="sb-caption">
+                <figure class="icon-caption"><img src="{% static 'img/master/box.svg' %}" alt=""></figure>
+                <h4>Home Delivey</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FRONT BOXES END -->
+
+
+<div class="map-wrapper mb-5">
+    <div class="mw-content">
+        <h2>Logistics Through Innovation, Dedication, and <br> and Logistic Technology</h2>
+    </div>
+</div>
+
+<!-- CONTENT START -->
+<section>
+
+<div class="container mt-3 mb-3">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="ha-leftside">
+          <h5>About Hapag- Lloyd</h5>
+          <h1>Logistics, make the world go round and revolutionize business.</h1>
+          <figure class="ha-signature"><img src="{% static 'img/images/signature.png' %}" alt=""></figure>
+        </div>
+      </div>
+      <div class="col-lg-6 space-break">
+        <div class="ha-rightside">
+            <p>At Hapag- Lloyd we make a commitment to pursue our business with integrity, respecting different cultures and the dignity and rights of individuals in all countries. We support the principles outlined in the UN Universal Declaration of Human Rights and commit ourselves to the observance of fundamental labor and environmental standards.</p>
+            <p>Worldwild Cargos is one of the largest air freight transportation providers in the world, offering a full and comprehensive package of premium.</p>
+
+            <div class="ha-banner">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="media">
+                          <img src="{% static 'img/master/shield.svg' %}" class="mr-3" alt="...">
+                          <div class="media-body">
+                            <h5 class="mt-0">Service Guarantee</h5>
+                            <p>A good tradition of trust.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 cb-mt-sm">
+                        <div class="media">
+                          <img src="{% static 'img/master/box-safe.svg' %}" class="mr-3" alt="...">
+                          <div class="media-body">
+                            <h5 class="mt-0">Linking Better</h5>
+                            <p>Moving never looked so good.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container mt-4 mb-5">
+    <!-- partial:index.partial.html -->
+    <div id="box-container">
+      <div class="box-layers" onclick="window.location='#'">
+        <figure class="box-layers-icon"><img src="{% static 'img/master/app.svg' %}" alt=""></figure>
+        <h2>Mobile App</h2>
+        <p>When it come to delivery speed we are the best we make sure we always reach our target time that we give the client because a happy client makes a happy business.</p>
+      </div>
+      <div class="box-layers" onclick="window.location='#'">
+        <figure class="box-layers-icon"><img src="{% static 'img/master/truck-and-clock.svg' %}" alt=""></figure>
+        <h2>Delivery on time</h2>
+        <p>Our safety team is available to assist customers with programs that can reduce cargo damage, improve security and enhance worker safety..</p>
+      </div>
+      <div class="box-layers" onclick="window.location='#'">
+        <figure class="box-layers-icon"><img src="{% static 'img/master/call-center.svg' %}" alt=""></figure>
+        <h2>Customer Support</h2>
+        <p>We use our network to help customers manage their goods most efficiently throughout their supply chains..</p>
+      </div>
+      <div class="box-layers" onclick="window.location='#'">
+        <figure class="box-layers-icon"><img src="{% static 'img/master/warehouse.svg' %}" alt=""></figure>
+        <h2>Safe Warehouse</h2>
+        <p>We have experience in home maintenance any surface from new constructions to cabinets..</p>
+      </div>
+    </div>
+    <!-- partial -->
+</div>
+
+<!-- WIDE SECTION COUNTER START -->
+<div class="counter-wrapper mt-5 mb-5">
+   <div class="container">
+        <div class="counter-layer">
+            <div class="row">
+              <div class="col-sm-6 col-lg-3"  data-aos="fade-left">
+                <div class="counter-box">
+                    <div class="counter" data-count="933">0</div>
+                    <p>TOTAL FREIGHT</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 mt-counter-t">
+                <div class="counter-box">
+                    <div class="counter" data-count="1675">0</div>
+                    <p>HAPPY CUSTOMERS</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 mt-counter-d">
+                <div class="counter-box">
+                    <div class="counter" data-count="140">0</div>
+                    <p>AWARDS</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 mt-counter-d">
+                <div class="counter-box">
+                    <div class="counter" data-count="63">0</div>
+                    <p>ASSOCIATED COMPANIES</p>
+                </div>
+              </div>
+            </div>
+        </div>
+   </div>
+</div>
+
+<div class="content-left-layer mb-5">
+    <div class="row">
+        <div class="col-md-12 col-lg-8">
+            <div class="cly-content">
+                <h5>WHY CHOOSE US?</h5>
+                <h2>Shipments Delivered on Time  <br>With no Hassle</h2>
+                <p>Hapag- Lloyd company offers the best logistics services using all mens of supply chain. Use our overland, ocean and air freight solutions for shipment of your goods.</p>
+                <div class="grid-layers">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 gl-col-left border-right border-bottom">
+                            <div class="media">
+                              <div class="icon-borders"><figure class="ib-icon"><img src="{% static 'img/master/blue-transport.svg' %}" alt=""></figure></div>
+                              <div class="media-body">
+                                  <h5 class="mt-0">International Shipping</h5>
+                                  <p>Great explorer of truth</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 gl-col-right border-bottom">
+                            <div class="media">
+                              <div class="icon-borders"><figure class="ib-icon"><img src="{% static 'img/master/blue-shield.svg' %}" alt=""></figure></div>
+                              <div class="media-body">
+                                  <h5 class="mt-0">Package Protection</h5>
+                                  <p>Quick systems introduction</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 gl-col-left border-right">
+                            <div class="media">
+                              <div class="icon-borders"><figure class="ib-icon"><img src="{% static 'img/master/blue-tools-and-utensils.svg' %}" alt=""></figure></div>
+                              <div class="media-body">
+                                  <h5 class="mt-0">24/7 Support</h5>
+                                  <p>Teams will ensure a smooth</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 gl-col-right border-0">
+                            <div class="media">
+                              <div class="icon-borders"><figure class="ib-icon"><img src="{% static 'img/master/blue-shipping-and-delivery.svg' %}" alt=""></figure></div>
+                              <div class="media-body">
+                                  <h5 class="mt-0">Home Delivery</h5>
+                                  <p>Dedicated implementation</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-4 cly-parallax">
+
+        </div>
+    </div>
+</div>
+<!-- WIDE SECTION COUNTER END -->
+
+<!-- OUR TEAM START -->
+<div class="container mt-5 mb-5">
+    <div class="row custom-row">
+       <div class="col-lg-6">
+           <div class="title-layer-left">
+               <h5>GO FAR TOGETHER</h5>
+                <h2>The Strength <br><strong>Comes with the Team</strong></h2>
+           </div>
+       </div>
+       <div class="col-lg-6">
+           <div class="title-layer-right">
+                <p>Don't know what means of transportation would be right for you, or you need someone for full supply chain management? Please contact us. Our team of professionals will be happy to help.</p>
+           </div>
+       </div>
+    </div>
+    <div class="team-carousel slider">
+      <div class="slide">
+        <div class="team-member">
+            <div class="team-img">
+                <img src="{% static 'img/images/rolf.jpg' %}" alt="" class="img-responsive">
+                <div class="team-intro light-txt">
+                    <h4>Rolf Habben Jansen</h4>
+                    <span>founder &amp; ceo</span>
+                </div>
+            </div>
+            <div class="team-hover">
+                <div class="desk">
+                    <h4>Hi There !</h4>
+                    <p>I love to introduce myself as the Founder.</p>
+                </div>
+                <div class="s-link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="team-member">
+            <div class="team-img">
+                <img src="{% static 'img/images/mark.jpg' %}" alt="" class="img-responsive">
+                <div class="team-intro light-txt">
+                    <h4>Mark Frese</h4>
+                    <span>CFO</span>
+                </div>
+            </div>
+            <div class="team-hover">
+                <div class="desk">
+                    <h5>Hello World</h5>
+                    <p>I love to introduce myself as the Chief Finicial Officer.</p>
+                </div>
+                <div class="s-link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="team-member">
+            <div class="team-img">
+                <img src="{% static 'img/images/anna.jpg' %}" alt="" class="img-responsive">
+                <div class="team-intro light-txt">
+                    <h4>Annabell Kroger</h4>
+                    <span>Commercial Clerk</span>
+                </div>
+            </div>
+            <div class="team-hover">
+                <div class="desk">
+                    <h5>Hi There !</h5>
+                    <p>I love to introduce myself as Commercial Clerk</p>
+                </div>
+                <div class="s-link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="team-member">
+            <div class="team-img">
+                <img src="{% static 'img/images/nic.jpg' %}" alt="" class="img-responsive">
+                <div class="team-intro light-txt">
+                    <h4>Nicola Gehrt</h4>
+                    <span>Director</span>
+                </div>
+            </div>
+            <div class="team-hover">
+                <div class="desk">
+                    <h5>Hello World</h5>
+                    <p>I love to introduce myself as the Director.</p>
+                </div>
+                <div class="s-link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="team-member">
+            <div class="team-img">
+                <img src="{% static 'img/images/gov.jpg' %}" alt="" class="img-responsive">
+                <div class="team-intro light-txt">
+                    <h4>Turiq Alnowaiser</h4>
+                    <span>Deputy Governor</span>
+                </div>
+            </div>
+            <div class="team-hover">
+                <div class="desk">
+                    <h5>Hi There!</h5>
+                    <p>I love to introduce myself as the Deputy Governor.</p>
+                </div>
+                <div class="s-link">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- OUR TEAM END -->
+
+<!-- WIDE SECTION INFO START-->
+<div class="ws-wrapper mt-5 mb-5">
+   <div class="row">
+        <div class="col-lg-7 col-xl-6 ws-parallax-layer">
+            <div class="ws-content-left">
+                <h5>Hapag- Lloyd Vision</h5>
+                <h2>A Tradition Of Trust</h2>
+                <p>The Hapag- Lloyd values are more than just words and definitions; they are the core of our daily business. For each of us, the challenge is not be simply believing in our values</p>
+                <p>We leverage our global presence and competence in Air and Ocean Freight by collaborating with our customers to unlock value in their supply chains.</p>
+                <div class="ws-box">
+                    <div class="ws-box-content">
+                        <figure class="ws-box-icon"><img src="{% static 'img/master/delivery-man-w.svg' %}" alt=""></figure>
+                        <div class="counter" data-count="93">0</div>
+                        <p>Qualified Staff</p>
+                    </div>
+                    <div class="ws-box-content">
+                        <figure class="ws-box-icon"><img src="{% static 'img/master/air.svg' %}" alt=""></figure>
+                        <div class="counter" data-count="933">0</div>
+                        <p>Total Freight</p>
+                    </div>
+                    <div class="ws-box-content">
+                        <figure class="ws-box-icon"><img src="{% static 'img/master/tower-crane-with-container.svg' %}" alt=""></figure>
+                        <div class="counter" data-count="1233">0</div>
+                        <p>Total Weight</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-xl-6  ws-parallax-layer-right">
+            <div class="ws-content-right">
+                <div class="ws-top-content">
+                    <h3>Logistics  <br> <strong>Beyond Expectation</strong></h3>
+                </div>
+                <div class="ws-bottom-content">
+                    <button class="cargoy-btn-white">Learn more</button>
+                </div>
+            </div>
+        </div>
+   </div>
+</div>
+<!-- WIDE SECTION INFO END-->
+
+<!-- LATEST NEWS START -->
+<div class="container mt-5 mb-5">
+    <div class="section-title">
+        <h2>Latest News</h2>
+        <p>We specialise in intelligent & effective search and believes in <br/> the power of partnerships to grow business.</p>
+    </div>
+    <div class="blog-carousel slider">
+      <div class="slide">
+        <figure class="blog-preview-thumb"><img src="{% static 'img/images/logistic0.jpg' %}" alt="" />
+          <div class="date"><span class="day">28</span><span class="month">Apr</span></div>
+          <div class="postcaption">
+            <h3>Ship Orders Crash as Takes a Toll on Trade</h3>
+            <p>Which is worse, that everyone has his price, or that the price is always so low application in life.</p>
+          </div>
+          <div class="hover"><i class="fas fa-external-link-alt"></i></div>
+          <a href="#"></a>
+        </figure>
+      </div>
+      <div class="slide">
+        <figure class="blog-preview-thumb"><img src="{% static 'img/images/logistic2.jpg' %}" alt="" />
+          <div class="date"><span class="day">17</span><span class="month">May</span></div>
+          <div class="postcaption">
+            <h3>Oil Traders Are Scrambling to Tankers</h3>
+            <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+          </div>
+          <div class="hover"><i class="fas fa-external-link-alt"></i></div>
+          <a href="#"></a>
+        </figure>
+      </div>
+      <div class="slide">
+        <figure class="blog-preview-thumb"><img src="{% static 'img/images/logistic4.jpg' %}" alt="" />
+          <div class="date"><span class="day">08</span><span class="month">June</span></div>
+          <div class="postcaption">
+            <h3>Weighs on Trade on the Largest Container Ship</h3>
+            <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+          </div>
+          <div class="hover"><i class="fas fa-external-link-alt"></i></div>
+          <a href="#"></a>
+        </figure>
+      </div>
+      <div class="slide">
+        <figure class="blog-preview-thumb"><img src="{% static 'img/images/logistic1.jpg' %}" alt="" />
+          <div class="date"><span class="day">08</span><span class="month">June</span></div>
+          <div class="postcaption">
+            <h3>The World Ended Yesterday</h3>
+            <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+          </div>
+          <div class="hover"><i class="fas fa-external-link-alt"></i></div>
+          <a href="#"></a>
+        </figure>
+      </div>
+    </div>
+</div>
+<!-- LATEST NEWS END -->
+
+</section>
+<!-- CONTENT END -->
+
+  {% endblock content %}

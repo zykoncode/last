@@ -1,0 +1,105 @@
+{% load static %}
+    <!-- FOOTER START -->
+    <footer>
+        <div class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="layer-info">
+                            <figure class="footer-logo">
+                                <img src="{% static 'img/master/LogoFoto.png' %}" alt="">
+                            </figure>
+                            <p>Hapag-Lloyd provide global supply-chain services to help enable sustainable trade and commerce in key markets and regions. We will accomplish this by investing in our people, our facilities and in technology.</p>
+                            <hr class="footer">
+                            <ul class="layer-contact mt-3">
+                                <li class="phone"><span class="tel-no"><a>+44 786 877 3545</a></span></li>
+                                <li class="email"><a href="mailto:info@httphapag-lloydcompany.com"> info@httphapag-lloydcompany.com</a></li>
+                                <li class="address">33195 NW 56th ST Miami, Florida</li>
+                            </ul>
+                            <div class="social-footer mt-4">
+                                <ul>
+                                   <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                   <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                   <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                   <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 footer-col">
+                        <h5 class="layer-title">Transportation</h5>
+                        <div class="layer-services">
+                            <ul class="left-side">
+                                <li><a href="#">Air Freight</a></li>
+                                <li><a href="#">Ground Freight</a></li>
+                                <li><a href="#">Maritime Freight</a></li>
+                            </ul>
+                            <ul class="right-side">
+                                <li><a href="#">Railway Freight </a></li>
+                                <li><a href="#">Home Delivery</a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <h5 class="layer-title mt-4">Newsletter</h5>
+                        <p class="subscribe">Subscribe to our newsletter to receive the latest news about our services.</p>
+                        <div class="newsletter mt-4">
+                            <form  action="#" method="post" name="sign-up">
+                                <input type="email" class="input" id="email" name="email" placeholder="Your email address" required>
+                                <input type="submit" class="button" id="submit" value="SIGN UP">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 news-layer">
+                        <h5 class="layer-title">Latest News</h5>
+                        <div class="media">
+                          <img src="{% static 'img/images/blog-thumb-footer-3.jpg' %}" class="mr-3" alt="...">
+                          <div class="media-body">
+                            <h6 class="mt-0"><a href="#">Logistics Firms Aim to Keep Goods Moving Economy Closes</a></h6>
+                            <p>April 1, 2020</p>
+                          </div>
+                        </div>
+                        <hr class="media">
+                        <div class="media mt-3">
+                          <img src="{% static 'img/images/blog-thumb-footer-2.jpg' %}" class="mr-3" alt="...">
+                          <div class="media-body">
+                            <h6 class="mt-0"><a href="#">Shipping Survival Mode Crushing the Margins.</a></h6>
+                            <p>March 31, 2020</p>
+                          </div>
+                        </div>
+                        <hr class="media">
+                        <div class="media">
+                          <img src="{% static 'img/images/blog-thumb-footer-1.jpg' %}" class="mr-3" alt="...">
+                          <div class="media-body">
+                            <h6 class="mt-0"><a href="#">Passenger Airlines Start Shifting Idled Planes.</a></h6>
+                            <p>March 29, 2020</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="copyright"><p>Copyright © 2021&nbsp;<a href="{%url 'home' %}">Hapag-Lloyd</a></p></div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-nav">
+                            <li><a href="{%url 'about' %}">About Us</a></li>
+                            <li class=""><a href="#">Contact</a></li>
+                            <li><a href="{%url 'track_shipment' %}">Track Shipment</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+
+
+    <!--SCROLL TOP START-->
+    <a href="#0" class="cd-top">Top</a>
+    <!--SCROLL TOP START-->
